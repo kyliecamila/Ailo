@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="96" height="96" viewBox="0 0 96 96">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        filter: url(#Ellipse_358);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.162" y1="0.115" x2="0.823" y2="0.862" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#4fc0e2"/>
+      <stop offset="1" stop-color="#6c5bf1"/>
+    </linearGradient>
+    <filter id="Ellipse_358" x="0" y="0" width="96" height="96" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-color="#6f51f9" flood-opacity="0.341"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="추가" transform="translate(15 15)">
+    <g class="cls-3" transform="matrix(1, 0, 0, 1, -15, -15)">
+      <circle id="Ellipse_358-2" data-name="Ellipse 358" class="cls-1" cx="33" cy="33" r="33" transform="translate(15 15)"/>
+    </g>
+    <g id="plus" transform="translate(23.5 23.5)">
+      <path id="Shape" class="cls-2" d="M7,0V19" transform="translate(2.5)"/>
+      <path id="Shape-2" data-name="Shape" class="cls-2" d="M0,7H19" transform="translate(0 2.5)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+<svg id="이동핸들" xmlns="http://www.w3.org/2000/svg" width="9" height="13" viewBox="0 0 9 13">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #627cec;
+      }
+    </style>
+  </defs>
+  <circle id="Ellipse_357" data-name="Ellipse 357" class="cls-1" cx="1.5" cy="1.5" r="1.5"/>
+  <circle id="Ellipse_357-2" data-name="Ellipse 357" class="cls-1" cx="1.5" cy="1.5" r="1.5" transform="translate(6)"/>
+  <circle id="Ellipse_357-3" data-name="Ellipse 357" class="cls-1" cx="1.5" cy="1.5" r="1.5" transform="translate(0 5)"/>
+  <circle id="Ellipse_357-4" data-name="Ellipse 357" class="cls-1" cx="1.5" cy="1.5" r="1.5" transform="translate(6 5)"/>
+  <circle id="Ellipse_357-5" data-name="Ellipse 357" class="cls-1" cx="1.5" cy="1.5" r="1.5" transform="translate(0 10)"/>
+  <circle id="Ellipse_357-6" data-name="Ellipse 357" class="cls-1" cx="1.5" cy="1.5" r="1.5" transform="translate(6 10)"/>
+</svg>
