@@ -243,8 +243,6 @@ export default function App() {
             <Text style={styles.middleTitle}>기본정보</Text>
             <Pressable onPress={clickedBoxHandler4}>
               <Birthday
-                placeholder="00월 00일"
-                keyboardType="number-pad"
                 clickedBox4={clickedBox4}
               />       
             </Pressable>

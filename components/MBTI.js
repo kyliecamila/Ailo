@@ -3,14 +3,37 @@ import { StyleSheet, Text, View, Pressable, TextInput, Modal } from 'react-nativ
 
 const MBTI = props => {
     const [isVisible, setIsVisible] = useState(false);
-    const addMBTIHandler =()=>{
+    const addMBTIHandler = () => {
         // setMBTI()
         setIsVisible(false);
+        setMBTI(preMBTI);
     }
-    const cancelMBTIHandler =()=>{
+    const cancelMBTIHandler = () => {
         setIsVisible(false);
+
+        setClickedState1(false);
+        setClickedState2(false);
+        setClickedState3(false);
+        setClickedState4(false);
+        setClickedState5(false);
+        setClickedState6(false);
+        setClickedState7(false);
+        setClickedState8(false);
+        setClickedState9(false);
+        setClickedState10(false);
+        setClickedState11(false);
+        setClickedState12(false);
+        setClickedState13(false);
+        setClickedState14(false);
+        setClickedState15(false);
+        setClickedState16(false);
+
     }
-    const [MBTI, setMBTI]=useState('');
+    const chooseMBTIHandler = () => {
+
+    }
+    const [MBTI, setMBTI] = useState('');
+    const [preMBTI, setPreMBTI] = useState('');
     const [clickedState1, setClickedState1] = useState(false);
     const [clickedState2, setClickedState2] = useState(false);
     const [clickedState3, setClickedState3] = useState(false);
@@ -31,51 +54,315 @@ const MBTI = props => {
 
     const clickedButtonHandler1 = () => {
         setClickedState1(clickedState1 == false ? true : false);
+        setClickedState2(false);
+        setClickedState3(false);
+        setClickedState4(false);
+        setClickedState5(false);
+        setClickedState6(false);
+        setClickedState7(false);
+        setClickedState8(false);
+        setClickedState9(false);
+        setClickedState10(false);
+        setClickedState11(false);
+        setClickedState12(false);
+        setClickedState13(false);
+        setClickedState14(false);
+        setClickedState15(false);
+        setClickedState16(false);
+        setPreMBTI('ISFJ');
     };
     const clickedButtonHandler2 = () => {
         setClickedState2(clickedState2 == false ? true : false);
+        setClickedState1(false);
+        setClickedState3(false);
+        setClickedState4(false);
+        setClickedState5(false);
+        setClickedState6(false);
+        setClickedState7(false);
+        setClickedState8(false);
+        setClickedState9(false);
+        setClickedState10(false);
+        setClickedState11(false);
+        setClickedState12(false);
+        setClickedState13(false);
+        setClickedState14(false);
+        setClickedState15(false);
+        setClickedState16(false);
+        setPreMBTI('INFJ');
     };
     const clickedButtonHandler3 = () => {
         setClickedState3(clickedState3 == false ? true : false);
+        setClickedState1(false);
+        setClickedState2(false);
+        setClickedState4(false);
+        setClickedState5(false);
+        setClickedState6(false);
+        setClickedState7(false);
+        setClickedState8(false);
+        setClickedState9(false);
+        setClickedState10(false);
+        setClickedState11(false);
+        setClickedState12(false);
+        setClickedState13(false);
+        setClickedState14(false);
+        setClickedState15(false);
+        setClickedState16(false);
+        setPreMBTI('ISTJ');
     };
     const clickedButtonHandler4 = () => {
         setClickedState4(clickedState4 == false ? true : false);
+        setClickedState1(false);
+        setClickedState2(false);
+        setClickedState3(false);
+        setClickedState5(false);
+        setClickedState6(false);
+        setClickedState7(false);
+        setClickedState8(false);
+        setClickedState9(false);
+        setClickedState10(false);
+        setClickedState11(false);
+        setClickedState12(false);
+        setClickedState13(false);
+        setClickedState14(false);
+        setClickedState15(false);
+        setClickedState16(false);
+        setPreMBTI('INTJ');
     };
     const clickedButtonHandler5 = () => {
         setClickedState5(clickedState5 == false ? true : false);
+        setClickedState1(false);
+        setClickedState2(false);
+        setClickedState3(false);
+        setClickedState4(false);
+        setClickedState6(false);
+        setClickedState7(false);
+        setClickedState8(false);
+        setClickedState9(false);
+        setClickedState10(false);
+        setClickedState11(false);
+        setClickedState12(false);
+        setClickedState13(false);
+        setClickedState14(false);
+        setClickedState15(false);
+        setClickedState16(false);
+        setPreMBTI('ISTP');
     };
     const clickedButtonHandler6 = () => {
         setClickedState6(clickedState6 == false ? true : false);
+        setClickedState1(false);
+        setClickedState2(false);
+        setClickedState3(false);
+        setClickedState4(false);
+        setClickedState5(false);
+        setClickedState7(false);
+        setClickedState8(false);
+        setClickedState9(false);
+        setClickedState10(false);
+        setClickedState11(false);
+        setClickedState12(false);
+        setClickedState13(false);
+        setClickedState14(false);
+        setClickedState15(false);
+        setClickedState16(false);
+        setPreMBTI('ISFP');
     };
     const clickedButtonHandler7 = () => {
         setClickedState7(clickedState7 == false ? true : false);
+        setClickedState1(false);
+        setClickedState2(false);
+        setClickedState3(false);
+        setClickedState4(false);
+        setClickedState5(false);
+        setClickedState6(false);
+        setClickedState8(false);
+        setClickedState9(false);
+        setClickedState10(false);
+        setClickedState11(false);
+        setClickedState12(false);
+        setClickedState13(false);
+        setClickedState14(false);
+        setClickedState15(false);
+        setClickedState16(false);
+        setPreMBTI('INFP');
     };
     const clickedButtonHandler8 = () => {
         setClickedState8(clickedState8 == false ? true : false);
+        setClickedState1(false);
+        setClickedState2(false);
+        setClickedState3(false);
+        setClickedState4(false);
+        setClickedState5(false);
+        setClickedState6(false);
+        setClickedState7(false);
+        setClickedState9(false);
+        setClickedState10(false);
+        setClickedState11(false);
+        setClickedState12(false);
+        setClickedState13(false);
+        setClickedState14(false);
+        setClickedState15(false);
+        setClickedState16(false);
+        setPreMBTI('INTP');
     };
     const clickedButtonHandler9 = () => {
         setClickedState9(clickedState9 == false ? true : false);
+        setClickedState1(false);
+        setClickedState2(false);
+        setClickedState3(false);
+        setClickedState4(false);
+        setClickedState5(false);
+        setClickedState6(false);
+        setClickedState7(false);
+        setClickedState8(false);
+        setClickedState9(false);
+        setClickedState10(false);
+        setClickedState11(false);
+        setClickedState12(false);
+        setClickedState13(false);
+        setClickedState14(false);
+        setClickedState15(false);
+        setClickedState16(false);
+        setPreMBTI('ESTP');
     };
     const clickedButtonHandler10 = () => {
         setClickedState10(clickedState10 == false ? true : false);
+        setClickedState1(false);
+        setClickedState2(false);
+        setClickedState3(false);
+        setClickedState4(false);
+        setClickedState5(false);
+        setClickedState6(false);
+        setClickedState7(false);
+        setClickedState8(false);
+        setClickedState9(false);
+        setClickedState10(false);
+        setClickedState11(false);
+        setClickedState12(false);
+        setClickedState13(false);
+        setClickedState14(false);
+        setClickedState15(false);
+        setClickedState16(false);
+        setPreMBTI('ESFP');
     };
     const clickedButtonHandler11 = () => {
         setClickedState11(clickedState11 == false ? true : false);
+        setClickedState1(false);
+        setClickedState2(false);
+        setClickedState3(false);
+        setClickedState4(false);
+        setClickedState5(false);
+        setClickedState6(false);
+        setClickedState7(false);
+        setClickedState8(false);
+        setClickedState9(false);
+        setClickedState10(false);
+        setClickedState11(false);
+        setClickedState12(false);
+        setClickedState13(false);
+        setClickedState14(false);
+        setClickedState15(false);
+        setClickedState16(false);
+        setPreMBTI('ENFP');
     };
     const clickedButtonHandler12 = () => {
         setClickedState12(clickedState12 == false ? true : false);
+        setClickedState1(false);
+        setClickedState2(false);
+        setClickedState3(false);
+        setClickedState4(false);
+        setClickedState5(false);
+        setClickedState6(false);
+        setClickedState7(false);
+        setClickedState8(false);
+        setClickedState9(false);
+        setClickedState10(false);
+        setClickedState11(false);
+        setClickedState12(false);
+        setClickedState13(false);
+        setClickedState14(false);
+        setClickedState15(false);
+        setClickedState16(false);
+        setPreMBTI('ENTP');
     };
     const clickedButtonHandler13 = () => {
         setClickedState13(clickedState13 == false ? true : false);
+        setClickedState1(false);
+        setClickedState2(false);
+        setClickedState3(false);
+        setClickedState4(false);
+        setClickedState5(false);
+        setClickedState6(false);
+        setClickedState7(false);
+        setClickedState8(false);
+        setClickedState9(false);
+        setClickedState10(false);
+        setClickedState11(false);
+        setClickedState12(false);
+        setClickedState13(false);
+        setClickedState14(false);
+        setClickedState15(false);
+        setClickedState16(false);
+        setPreMBTI('ESFJ');
     };
     const clickedButtonHandler14 = () => {
         setClickedState14(clickedState14 == false ? true : false);
+        setClickedState1(false);
+        setClickedState2(false);
+        setClickedState3(false);
+        setClickedState4(false);
+        setClickedState5(false);
+        setClickedState6(false);
+        setClickedState7(false);
+        setClickedState8(false);
+        setClickedState9(false);
+        setClickedState10(false);
+        setClickedState11(false);
+        setClickedState12(false);
+        setClickedState13(false);
+        setClickedState14(false);
+        setClickedState15(false);
+        setClickedState16(false);
+        setPreMBTI('ENFJ');
     };
     const clickedButtonHandler15 = () => {
         setClickedState15(clickedState15 == false ? true : false);
+        setClickedState1(false);
+        setClickedState2(false);
+        setClickedState3(false);
+        setClickedState4(false);
+        setClickedState5(false);
+        setClickedState6(false);
+        setClickedState7(false);
+        setClickedState8(false);
+        setClickedState9(false);
+        setClickedState10(false);
+        setClickedState11(false);
+        setClickedState12(false);
+        setClickedState13(false);
+        setClickedState14(false);
+        setClickedState15(false);
+        setClickedState16(false);
+        setPreMBTI('ESTJ');
     };
     const clickedButtonHandler16 = () => {
         setClickedState16(clickedState16 == false ? true : false);
+        setClickedState1(false);
+        setClickedState2(false);
+        setClickedState3(false);
+        setClickedState4(false);
+        setClickedState5(false);
+        setClickedState6(false);
+        setClickedState7(false);
+        setClickedState8(false);
+        setClickedState9(false);
+        setClickedState10(false);
+        setClickedState11(false);
+        setClickedState12(false);
+        setClickedState13(false);
+        setClickedState14(false);
+        setClickedState15(false);
+        setClickedState16(false);
+        setPreMBTI('ENTJ');
     };
 
 
@@ -85,22 +372,23 @@ const MBTI = props => {
             <View>
                 <Text
                     onPress={() => setIsVisible(true)}
-                    style={styles.psudoTextInput}></Text>
+                    style={{...styles.psudoTextInput , borderColor:props.clickedBox5?'blue':'gray',
+                    color: props.clickedBox5?'blue':'gray' }}>{MBTI}</Text>
             </View>
             <Modal
                 visible={isVisible}
                 animationType="slide">
                 <View style={styles.MBTIModal}>
                     <View style={styles.horizontal}>
-                            <Pressable onPress={cancelMBTIHandler} >
-                                <Text style={styles.gray}>취소</Text>
-                            </Pressable>
-                            <Pressable>
-                                <Text style={styles.middle}>MBTI</Text>
-                            </Pressable>
-                            <Pressable onPress={addMBTIHandler}>
-                                <Text style={styles.gray}>완료</Text>
-                            </Pressable>
+                        <Pressable onPress={cancelMBTIHandler} >
+                            <Text style={styles.gray}>취소</Text>
+                        </Pressable>
+                        <Pressable>
+                            <Text style={styles.middle}>MBTI</Text>
+                        </Pressable>
+                        <Pressable onPress={addMBTIHandler}>
+                            <Text style={styles.gray}>완료</Text>
+                        </Pressable>
                     </View>
                     <View style={styles.buttonContainer}>
                         <Pressable
@@ -243,10 +531,10 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         flexDirection: 'row',
         marginBottom: 20,
-        marginLeft:80
+        marginLeft: 80
     },
     MBTIModal: {
-        flex:1,
+        flex: 1,
         marginTop: '120%',
         alignItems: 'center',
     },
@@ -276,16 +564,16 @@ const styles = StyleSheet.create({
         borderColor: 'gray',
         borderRadius: 10,
         paddingLeft: 8,
-        marginLeft:15
+        marginLeft: 15
     },
     gray: {
         color: 'gray',
         width: 70,
         fontSize: 16,
     },
-    middle:{
-        marginLeft:80,
-        marginRight:130
+    middle: {
+        marginLeft: 80,
+        marginRight: 130
     },
 
     flexbox: {
