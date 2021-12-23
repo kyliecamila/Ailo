@@ -7,7 +7,7 @@ const Cell = props => {
                 <Text style={[styles.gray,{color:props.clickedBox3?'blue':'gray'}]}>휴대전화</Text>
                 <TextInput {...props} style={{ ...styles.inputBox, ...props.style,
                     borderColor:props.clickedBox3?'blue':'gray',
-                    color: props.clickedBox3?'blue':'gray' }} />
+                    color: props.clickedBox3?'blue':'gray',paddingTop:0,paddingLeft:10 }} />
             </View>
     )
 };
@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     inputBox: {
         borderWidth: 1,
         width: 200,
-        height: 40,
+        height: 35,
         borderStyle: 'solid',
         borderColor: 'gray',
         borderRadius: 10,

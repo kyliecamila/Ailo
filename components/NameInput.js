@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     inputBox: {
         borderWidth: 1,
         width: 200,
-        height: 40,
+        height: 35,
         borderStyle: 'solid',
         borderColor: 'gray',
         borderRadius: 10,

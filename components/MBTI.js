@@ -373,7 +373,7 @@ const MBTI = props => {
                 <Text
                     onPress={() => setIsVisible(true)}
                     style={{...styles.psudoTextInput , borderColor:props.clickedBox5?'blue':'gray',
-                    color: props.clickedBox5?'blue':'gray' }}>{MBTI}</Text>
+                    color: props.clickedBox5?'blue':'gray' ,paddingTop:7,paddingLeft:10}}>{MBTI}</Text>
             </View>
             <Modal
                 visible={isVisible}
@@ -381,7 +381,7 @@ const MBTI = props => {
                 <View style={styles.MBTIModal}>
                     <View style={styles.horizontal}>
                         <Pressable onPress={cancelMBTIHandler} >
-                            <Text style={styles.gray}>취소</Text>
+                            <Text style={{...styles.gray,paddingLeft:20}}>취소</Text>
                         </Pressable>
                         <Pressable>
                             <Text style={styles.middle}>MBTI</Text>
@@ -396,28 +396,28 @@ const MBTI = props => {
                                 backgroundColor: clickedState1 ? 'blue' : 'white'
                             }]}
                             onPress={clickedButtonHandler1}
-                        ><Text style={{ color: clickedState1 ? 'white' : 'blue' }}>ISFJ</Text>
+                        ><Text style={{ color: clickedState1 ? 'white' : 'blue',paddingTop:4,paddingLeft:10 }}>ISFJ</Text>
                         </Pressable>
                         <Pressable
                             style={[styles.groupButton, {
                                 backgroundColor: clickedState2 ? 'blue' : 'white'
                             }]}
                             onPress={clickedButtonHandler2}
-                        ><Text style={{ color: clickedState2 ? 'white' : 'blue' }}>INFJ</Text>
+                        ><Text style={{ color: clickedState2 ? 'white' : 'blue',paddingTop:4,paddingLeft:10  }}>INFJ</Text>
                         </Pressable>
                         <Pressable
                             style={[styles.groupButton, {
                                 backgroundColor: clickedState3 ? 'blue' : 'white'
                             }]}
                             onPress={clickedButtonHandler3}
-                        ><Text style={{ color: clickedState3 ? 'white' : 'blue' }}>ISTJ</Text>
+                        ><Text style={{ color: clickedState3 ? 'white' : 'blue',paddingTop:4,paddingLeft:10  }}>ISTJ</Text>
                         </Pressable>
                         <Pressable
                             style={[styles.groupButton, {
                                 backgroundColor: clickedState4 ? 'blue' : 'white'
                             }]}
                             onPress={clickedButtonHandler4}
-                        ><Text style={{ color: clickedState4 ? 'white' : 'blue' }}>INTJ</Text>
+                        ><Text style={{ color: clickedState4 ? 'white' : 'blue' ,paddingTop:4,paddingLeft:10 }}>INTJ</Text>
                         </Pressable>
                     </View>
                     <View style={styles.buttonContainer}>
@@ -426,28 +426,28 @@ const MBTI = props => {
                                 backgroundColor: clickedState5 ? 'blue' : 'white'
                             }]}
                             onPress={clickedButtonHandler5}
-                        ><Text style={{ color: clickedState5 ? 'white' : 'blue' }}>ISTP</Text>
+                        ><Text style={{ color: clickedState5 ? 'white' : 'blue' ,paddingTop:4,paddingLeft:10 }}>ISTP</Text>
                         </Pressable>
                         <Pressable
                             style={[styles.groupButton, {
                                 backgroundColor: clickedState6 ? 'blue' : 'white'
                             }]}
                             onPress={clickedButtonHandler6}
-                        ><Text style={{ color: clickedState6 ? 'white' : 'blue' }}>ISFP</Text>
+                        ><Text style={{ color: clickedState6 ? 'white' : 'blue' ,paddingTop:4,paddingLeft:10 }}>ISFP</Text>
                         </Pressable>
                         <Pressable
                             style={[styles.groupButton, {
                                 backgroundColor: clickedState7 ? 'blue' : 'white'
                             }]}
                             onPress={clickedButtonHandler7}
-                        ><Text style={{ color: clickedState7 ? 'white' : 'blue' }}>INFP</Text>
+                        ><Text style={{ color: clickedState7 ? 'white' : 'blue',paddingTop:4,paddingLeft:10  }}>INFP</Text>
                         </Pressable>
                         <Pressable
                             style={[styles.groupButton, {
                                 backgroundColor: clickedState8 ? 'blue' : 'white'
                             }]}
                             onPress={clickedButtonHandler8}
-                        ><Text style={{ color: clickedState8 ? 'white' : 'blue' }}>INTP</Text>
+                        ><Text style={{ color: clickedState8 ? 'white' : 'blue',paddingTop:4,paddingLeft:10  }}>INTP</Text>
                         </Pressable>
                     </View>
                     <View style={styles.buttonContainer}>
@@ -456,28 +456,28 @@ const MBTI = props => {
                                 backgroundColor: clickedState9 ? 'blue' : 'white'
                             }]}
                             onPress={clickedButtonHandler9}
-                        ><Text style={{ color: clickedState9 ? 'white' : 'blue' }}>ESTP</Text>
+                        ><Text style={{ color: clickedState9 ? 'white' : 'blue',paddingTop:4,paddingLeft:10  }}>ESTP</Text>
                         </Pressable>
                         <Pressable
                             style={[styles.groupButton, {
                                 backgroundColor: clickedState10 ? 'blue' : 'white'
                             }]}
                             onPress={clickedButtonHandler10}
-                        ><Text style={{ color: clickedState10 ? 'white' : 'blue' }}>ESFP</Text>
+                        ><Text style={{ color: clickedState10 ? 'white' : 'blue',paddingTop:4,paddingLeft:10  }}>ESFP</Text>
                         </Pressable>
                         <Pressable
                             style={[styles.groupButton, {
                                 backgroundColor: clickedState11 ? 'blue' : 'white'
                             }]}
                             onPress={clickedButtonHandler11}
-                        ><Text style={{ color: clickedState11 ? 'white' : 'blue' }}>ENFP</Text>
+                        ><Text style={{ color: clickedState11 ? 'white' : 'blue' ,paddingTop:4,paddingLeft:10 }}>ENFP</Text>
                         </Pressable>
                         <Pressable
                             style={[styles.groupButton, {
                                 backgroundColor: clickedState12 ? 'blue' : 'white'
                             }]}
                             onPress={clickedButtonHandler12}
-                        ><Text style={{ color: clickedState12 ? 'white' : 'blue' }}>ENTP</Text>
+                        ><Text style={{ color: clickedState12 ? 'white' : 'blue',paddingTop:4,paddingLeft:10  }}>ENTP</Text>
                         </Pressable>
                     </View>
                     <View style={styles.buttonContainer}>
@@ -486,28 +486,28 @@ const MBTI = props => {
                                 backgroundColor: clickedState13 ? 'blue' : 'white'
                             }]}
                             onPress={clickedButtonHandler13}
-                        ><Text style={{ color: clickedState13 ? 'white' : 'blue' }}>ESFJ</Text>
+                        ><Text style={{ color: clickedState13 ? 'white' : 'blue',paddingTop:4,paddingLeft:10  }}>ESFJ</Text>
                         </Pressable>
                         <Pressable
                             style={[styles.groupButton, {
                                 backgroundColor: clickedState14 ? 'blue' : 'white'
                             }]}
                             onPress={clickedButtonHandler14}
-                        ><Text style={{ color: clickedState14 ? 'white' : 'blue' }}>ENFJ</Text>
+                        ><Text style={{ color: clickedState14 ? 'white' : 'blue',paddingTop:4,paddingLeft:10  }}>ENFJ</Text>
                         </Pressable>
                         <Pressable
                             style={[styles.groupButton, {
                                 backgroundColor: clickedState15 ? 'blue' : 'white'
                             }]}
                             onPress={clickedButtonHandler15}
-                        ><Text style={{ color: clickedState15 ? 'white' : 'blue' }}>ESTJ</Text>
+                        ><Text style={{ color: clickedState15 ? 'white' : 'blue',paddingTop:4,paddingLeft:10  }}>ESTJ</Text>
                         </Pressable>
                         <Pressable
                             style={[styles.groupButton, {
                                 backgroundColor: clickedState16 ? 'blue' : 'white'
                             }]}
                             onPress={clickedButtonHandler16}
-                        ><Text style={{ color: clickedState16 ? 'white' : 'blue' }}>ENTJ</Text>
+                        ><Text style={{ color: clickedState16 ? 'white' : 'blue',paddingTop:4,paddingLeft:10  }}>ENTJ</Text>
                         </Pressable>
                     </View>
                 </View>
@@ -559,7 +559,7 @@ const styles = StyleSheet.create({
     psudoTextInput: {
         borderWidth: 1,
         width: 200,
-        height: 40,
+        height: 35,
         borderStyle: 'solid',
         borderColor: 'gray',
         borderRadius: 10,

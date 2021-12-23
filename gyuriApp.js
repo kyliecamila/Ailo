@@ -1,4 +1,3 @@
-  
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, TextInput, Pressable, Keyboard, TouchableWithoutFeedback, Button, ScrollView, Modal, TouchableOpacity } from 'react-native';
 import Birthday from './components/Birthday';
@@ -9,18 +8,7 @@ import Group from './components/Group';
 import RelatedPpl from './components/RelatedPpl';
 
 
-//미지
-
-//엑스포 아이콘
-import { Entypo } from "@expo/vector-icons";
-import { MaterialIcons } from "@expo/vector-icons";
-import { Ionicons } from "@expo/vector-icons";
-import { Feather } from '@expo/vector-icons'; 
-import { FontAwesome } from '@expo/vector-icons'; 
-//빈거 <Feather name="star" size={24} color="black" />
-//찬거 <FontAwesome name="star" size={24} color="yellow" />
-export default function EditDetail(props) {
-
+export default function App() {
 
   const [enteredName, setEnteredName] = useState('');
   const [confirmed, setConfirmed] = useState(false);
@@ -193,40 +181,26 @@ export default function EditDetail(props) {
   }
 
 
-  let confirmedName;
-  if (confirmed) {
-    confirmedName = <Text>{enteredName}님은</Text>;
-  }
-  const [isStarClicked, setIsStarClicked]=useState(false);
-  const clickStarHandler=()=>{
-    isStarClicked?setIsStarClicked(false):setIsStarClicked(true);
-  }
-  //빈거 <Feather name="star" size={24} color="black" />
-//찬거 <FontAwesome name="star" size={24} color="yellow" />
-let star;
-if(isStarClicked){
-  star=<FontAwesome name="star" size={24} color="#ecce00"  />
-}
-else{
-  star=<Feather name="star" size={24} color="black" />;
-}
 
   return (
- 
-      
+    <TouchableWithoutFeedback onPress={() => {
+      Keyboard.dismiss();
+    }}>
+      <ScrollView>
         <View style={styles.screen}>
           {/* <View>
         <View><Image style={styles.image} source={Back} /></View>
         <View><Image style={styles.image} source ={Star}/></View>
         <Pressable><Text style={{color:'blue'}}>저장</Text></Pressable>
       </View> */}
-          <View style={styles.horizontal} >
-              <TouchableOpacity onPress={()=>props.goback(false) }>
-                <MaterialIcons name="arrow-back-ios"  size={24} color="gray" />
-              </TouchableOpacity>
-              <Pressable onPress={clickStarHandler}>
-                
-                <Text style={styles.leftpadding}>{star}</Text>
+
+          <View style={styles.contentBox}>
+            <View style={styles.horizontal}>
+              <Pressable onPress={saveInputHandler}>
+                <Text>뒤로가기</Text>
+              </Pressable>
+              <Pressable onPress={saveInputHandler}>
+                <Text style={styles.leftpadding}>별</Text>
               </Pressable>
               <Pressable
                 onPress={saveInputHandler}>
@@ -234,16 +208,10 @@ else{
               </Pressable>
 
             </View>
-            <TouchableWithoutFeedback onPress={() => {
-      Keyboard.dismiss();
-    }}>
-            <ScrollView>
-          <View style={styles.contentBox}>
-            
             <View>
               <Text style={styles.textTitle}>
-                {confirmedName}{"\n"}
-                어떤 분이신가요?
+                어떤 분과의 관계를{"\n"}
+                기록하고 싶으신가요?
               </Text>
             </View>
           </View>
@@ -282,7 +250,7 @@ else{
             </Pressable>
             
             <Pressable onPress={clickedBoxHandler5}>
-              <MBTI 
+              <MBTI
                 clickedBox5={clickedBox5} />
             </Pressable>
             <Pressable onPress={clickedBoxHandler6}>
@@ -391,10 +359,9 @@ else{
               </View>
             </Modal>
           </View>
-          </ScrollView>
-    </TouchableWithoutFeedback>
         </View>
-   
+      </ScrollView>
+    </TouchableWithoutFeedback>
   );
 }
 
@@ -415,6 +382,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     flexDirection: 'row',
     marginBottom: 20,
+    marginLeft: 30
   },
   blue: {
     color: 'blue'

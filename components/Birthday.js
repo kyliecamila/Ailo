@@ -45,7 +45,7 @@ const Birthday = props => {
             <Text 
             onPress={showDatepicker}
             style={{...styles.psudoTextInput , borderColor:props.clickedBox4?'blue':'gray',
-            color: props.clickedBox4?'blue':'gray' }} >{confirmedDate}</Text>
+            color: props.clickedBox4?'blue':'gray' ,paddingTop:6,paddingLeft:10}} >{confirmedDate}</Text>
             
             <View>
               
@@ -101,7 +101,7 @@ const styles = StyleSheet.create({
     psudoTextInput: {
         borderWidth: 1,
         width: 200,
-        height: 40,
+        height: 35,
         borderStyle: 'solid',
         borderColor: 'gray',
         borderRadius: 10,

@@ -55,6 +55,7 @@ const longPressHandler=()=>{
               onLongPress={longPressHandler}
               onPress={clickedButtonHandler1}
             ><Text style={{
+              paddingLeft:3, paddingTop:2,
               color: props.clickedBox2?clickedState1?'white':'blue':clickedState1?'white':'gray'
             }}>#가족</Text>
             </Pressable>
@@ -66,6 +67,7 @@ const longPressHandler=()=>{
               onLongPress={longPressHandler}
               onPress={clickedButtonHandler2}
             ><Text style={{
+              paddingLeft:3, paddingTop:2,
               color: props.clickedBox2?clickedState2?'white':'blue':clickedState2?'white':'gray'
             }}>#친구</Text>
             </Pressable>
@@ -77,6 +79,7 @@ const longPressHandler=()=>{
               onLongPress={longPressHandler}
               onPress={clickedButtonHandler3}
             ><Text style={{
+              paddingLeft:3, paddingTop:2,
               color: props.clickedBox2?clickedState3?'white':'blue':clickedState3?'white':'gray'
             }}>#동료</Text>
             </Pressable>
@@ -90,6 +93,7 @@ const longPressHandler=()=>{
               onLongPress={longPressHandler}
               onPress={clickedButtonHandler4}
             ><Text style={{
+              paddingLeft:3, paddingTop:2,
               color: props.clickedBox2?clickedState4?'white':'blue':clickedState4?'white':'gray'
             }}>#회사</Text>
             </Pressable>
@@ -101,6 +105,7 @@ const longPressHandler=()=>{
               onLongPress={longPressHandler}
               onPress={clickedButtonHandler5}
             ><Text style={{
+              paddingLeft:3, paddingTop:2,
               color: props.clickedBox2?clickedState5?'white':'blue':clickedState5?'white':'gray'
             }}>#학교</Text>
             </Pressable>
@@ -112,6 +117,7 @@ const longPressHandler=()=>{
               onLongPress={longPressHandler}
               onPress={clickedButtonHandler6}
             ><Text style={{
+              paddingLeft:3, paddingTop:2,
               color: props.clickedBox2?clickedState6?'white':'blue':clickedState6?'white':'gray'
             }}>#직장</Text>
             </Pressable>
@@ -125,6 +131,7 @@ const longPressHandler=()=>{
               onLongPress={longPressHandler}
               onPress={clickedButtonHandler7}
             ><Text style={{
+              paddingRight:4, paddingTop:2,
               color: props.clickedBox2?clickedState7?'white':'blue':clickedState7?'white':'gray'
               
             }}>#직접입력</Text>
